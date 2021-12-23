@@ -8,6 +8,7 @@ import net.proteanit.sql.DbUtils;
 
 
 
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -173,11 +174,9 @@ public class History extends javax.swing.JFrame {
         try{
             Connection con=ConnectionProvider.getCon();
             Statement st=con.createStatement();
-            ResultSet rs1=st.executeQuery("select issue.studentID,student.name,book.name,issue.issueDate,issue.dueDate from student inner join book inner join issue where book.bookID=issue.bookID and student.studentID=issue.studentID and issue.returnBook='NO'");
-            jTable1.setModel(DbUtils.resultSetToTableModel(rs1));
+            ResultSet rs=st.executeQuery("select issue.studentID,student.name,book.name,issue.issueDate,issue.dueDate from student inner join book inner join issue where book.bookID=issue.bookID and student.studentID=issue.studentID and issue.returnBook='NO'");
+            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
             ResultSet rs2=st.executeQuery("select issue.studentID,student.name,book.name,issue.issueDate,issue.dueDate from student inner join book inner join issue where book.bookID=issue.bookID and student.studentID=issue.studentID and issue.returnBook='YES'");
-            
-            jTable2.setModel(DbUtils.resultSetToTableModel(rs2));
             
             
         }

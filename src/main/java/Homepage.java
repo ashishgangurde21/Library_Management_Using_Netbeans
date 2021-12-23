@@ -33,83 +33,74 @@ public class Homepage extends javax.swing.JFrame {
         issue_button = new javax.swing.JButton();
         return_button = new javax.swing.JButton();
         logout_button = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        newEntry_button.setBackground(new java.awt.Color(51, 153, 255));
+        newEntry_button.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         newEntry_button.setText("New Student Entry");
         newEntry_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 newEntry_buttonActionPerformed(evt);
             }
         });
+        getContentPane().add(newEntry_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
 
+        newBook_button.setBackground(new java.awt.Color(102, 204, 255));
+        newBook_button.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         newBook_button.setText("New Book");
         newBook_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 newBook_buttonActionPerformed(evt);
             }
         });
+        getContentPane().add(newBook_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 190, 30));
 
+        history_button.setBackground(new java.awt.Color(51, 153, 255));
+        history_button.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         history_button.setText("History");
         history_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 history_buttonActionPerformed(evt);
             }
         });
+        getContentPane().add(history_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 190, -1));
 
+        issue_button.setBackground(new java.awt.Color(102, 204, 255));
+        issue_button.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         issue_button.setText("Issue Book");
         issue_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 issue_buttonActionPerformed(evt);
             }
         });
+        getContentPane().add(issue_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 190, -1));
 
+        return_button.setBackground(new java.awt.Color(0, 153, 255));
+        return_button.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         return_button.setText("Return Book");
         return_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 return_buttonActionPerformed(evt);
             }
         });
+        getContentPane().add(return_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(51, 320, 190, -1));
 
+        logout_button.setBackground(new java.awt.Color(102, 204, 255));
+        logout_button.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         logout_button.setText("Logout");
         logout_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logout_buttonActionPerformed(evt);
             }
         });
+        getContentPane().add(logout_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 190, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addComponent(newEntry_button)
-                .addGap(69, 69, 69)
-                .addComponent(newBook_button)
-                .addGap(73, 73, 73)
-                .addComponent(history_button)
-                .addGap(66, 66, 66)
-                .addComponent(issue_button)
-                .addGap(63, 63, 63)
-                .addComponent(return_button)
-                .addGap(62, 62, 62)
-                .addComponent(logout_button)
-                .addContainerGap(492, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(newEntry_button)
-                    .addComponent(newBook_button)
-                    .addComponent(history_button)
-                    .addComponent(issue_button)
-                    .addComponent(return_button)
-                    .addComponent(logout_button))
-                .addContainerGap(725, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/bg1.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1366, 768));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -184,6 +175,7 @@ public class Homepage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton history_button;
     private javax.swing.JButton issue_button;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton logout_button;
     private javax.swing.JButton newBook_button;
     private javax.swing.JButton newEntry_button;
