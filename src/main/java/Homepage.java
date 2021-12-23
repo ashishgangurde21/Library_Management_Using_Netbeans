@@ -27,26 +27,20 @@ public class Homepage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        newEntry_button = new javax.swing.JButton();
+        label1 = new java.awt.Label();
         newBook_button = new javax.swing.JButton();
         history_button = new javax.swing.JButton();
         issue_button = new javax.swing.JButton();
         return_button = new javax.swing.JButton();
         logout_button = new javax.swing.JButton();
+        label2 = new java.awt.Label();
+        newEntry_button3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+
+        label1.setText("label1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        newEntry_button.setBackground(new java.awt.Color(51, 153, 255));
-        newEntry_button.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
-        newEntry_button.setText("New Student Entry");
-        newEntry_button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newEntry_buttonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(newEntry_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
 
         newBook_button.setBackground(new java.awt.Color(102, 204, 255));
         newBook_button.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
@@ -56,17 +50,17 @@ public class Homepage extends javax.swing.JFrame {
                 newBook_buttonActionPerformed(evt);
             }
         });
-        getContentPane().add(newBook_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 190, 30));
+        getContentPane().add(newBook_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 190, 30));
 
         history_button.setBackground(new java.awt.Color(51, 153, 255));
         history_button.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
-        history_button.setText("History");
+        history_button.setText("Pending Returns");
         history_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 history_buttonActionPerformed(evt);
             }
         });
-        getContentPane().add(history_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 190, -1));
+        getContentPane().add(history_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 190, -1));
 
         issue_button.setBackground(new java.awt.Color(102, 204, 255));
         issue_button.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
@@ -76,7 +70,7 @@ public class Homepage extends javax.swing.JFrame {
                 issue_buttonActionPerformed(evt);
             }
         });
-        getContentPane().add(issue_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 190, -1));
+        getContentPane().add(issue_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 190, -1));
 
         return_button.setBackground(new java.awt.Color(0, 153, 255));
         return_button.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -86,7 +80,7 @@ public class Homepage extends javax.swing.JFrame {
                 return_buttonActionPerformed(evt);
             }
         });
-        getContentPane().add(return_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(51, 320, 190, -1));
+        getContentPane().add(return_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 190, -1));
 
         logout_button.setBackground(new java.awt.Color(102, 204, 255));
         logout_button.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -96,11 +90,26 @@ public class Homepage extends javax.swing.JFrame {
                 logout_buttonActionPerformed(evt);
             }
         });
-        getContentPane().add(logout_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 190, -1));
+        getContentPane().add(logout_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 470, 190, -1));
+
+        label2.setAlignment(java.awt.Label.CENTER);
+        label2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        label2.setText("LIBRARY MANAGEMENT SYSTEM");
+        getContentPane().add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 20, 460, 60));
+
+        newEntry_button3.setBackground(new java.awt.Color(51, 153, 255));
+        newEntry_button3.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        newEntry_button3.setText("New Student Entry");
+        newEntry_button3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newEntry_button3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(newEntry_button3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/bg1.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1366, 768));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1366, 768));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -111,11 +120,6 @@ public class Homepage extends javax.swing.JFrame {
         new Login().setVisible(true);
         
     }//GEN-LAST:event_logout_buttonActionPerformed
-
-    private void newEntry_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newEntry_buttonActionPerformed
-        // TODO add your handling code here:
-        new NewStudent().setVisible(true);
-    }//GEN-LAST:event_newEntry_buttonActionPerformed
 
     private void newBook_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newBook_buttonActionPerformed
         // TODO add your handling code here:
@@ -136,6 +140,10 @@ public class Homepage extends javax.swing.JFrame {
         // TODO add your handling code here:
         new History().setVisible(true);
     }//GEN-LAST:event_history_buttonActionPerformed
+
+    private void newEntry_button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newEntry_button3ActionPerformed
+        new NewStudent().setVisible(true);
+    }//GEN-LAST:event_newEntry_button3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -176,9 +184,11 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JButton history_button;
     private javax.swing.JButton issue_button;
     private javax.swing.JLabel jLabel2;
+    private java.awt.Label label1;
+    private java.awt.Label label2;
     private javax.swing.JButton logout_button;
     private javax.swing.JButton newBook_button;
-    private javax.swing.JButton newEntry_button;
+    private javax.swing.JButton newEntry_button3;
     private javax.swing.JButton return_button;
     // End of variables declaration//GEN-END:variables
 }

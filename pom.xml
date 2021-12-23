@@ -43,7 +43,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <mypath>C:/Users/Ashish/Documents/NetBeansProjects/Library_Management/lib</mypath>
+        <mypath>C:/Users/hamza/Library_Management_Using_Netbeans/lib</mypath>
 
     </properties>
 </project>
